@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Alibaba Group Holding Ltd.
+// Copyright (c) 2025 Alibaba Group Holding Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,17 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package trpc
+package neo4j
 
-import (
-	"trpc.group/trpc-go/trpc-go/codec"
-)
-
-type trpcReq struct {
-	msg  codec.Msg
-	addr string
-}
-
-type trpcRes struct {
-	statusCode int
+type neo4jRequest struct {
+	Statement string
+	Op        string
+	BatchSize int
 }

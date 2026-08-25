@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Alibaba Group Holding Ltd.
+// Copyright (c) 2025 Alibaba Group Holding Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,17 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package trpc
+package neo4j
 
-import (
-	"trpc.group/trpc-go/trpc-go/codec"
-)
+import "strings"
 
-type trpcReq struct {
-	msg  codec.Msg
-	addr string
-}
+const defaultOp = "QUERY"
 
-type trpcRes struct {
-	statusCode int
+// extractOpType returns the leading Cypher clause keyword, e.g. "MATCH",
+// "CREATE", "MERGE" or "CALL", which is used as the db.operation.name.
+func extractOpType(statement string) string {
+	s := strings.TrimSpace(statement)
+	if s == "" {
+		return defaultOp
+	}
+	end := strings.IndexAny(s, " \t\r\n(")
+	if end == -1 {
+		return strings.ToUpper(s)
+	}
+	return strings.ToUpper(s[:end])
 }
