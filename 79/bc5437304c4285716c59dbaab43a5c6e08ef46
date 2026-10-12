@@ -1,0 +1,21 @@
+pkg/rules/http/net_http_otel_instrumenter.go
+  s_c8db6513a11485::t_9d7d232cd48572 120-128
+pkg/rules/http/client_server_address_test.go
+  s_c8db6513a11485::t_9d7d232cd48572 1-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "79bc5437304c4285716c59dbaab43a5c6e08ef46",
+  "prompts": {},
+  "sessions": {
+    "s_c8db6513a11485": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "58b8bb1d-89ab-4ed7-b5fb-037da72312d5",
+        "model": "default"
+      },
+      "human_author": "will-jg <121209484+will-jg@users.noreply.github.com>"
+    }
+  }
+}
