@@ -1,0 +1,23 @@
+test/elasticsearch/v8.5.0/test_es_typedclient_metrics.go
+  s_c8db6513a11485::t_e933af3ca45ac4 98
+test/nethttp/test_http_metrics.go
+  s_c8db6513a11485::t_291b0d1e70b417 65
+test/elasticsearch/v8.4.0/test_es_metrics.go
+  s_c8db6513a11485::t_063e2280c710db 96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "356cc046e1f638258d3f8937b191bb7c98337edb",
+  "prompts": {},
+  "sessions": {
+    "s_c8db6513a11485": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "58b8bb1d-89ab-4ed7-b5fb-037da72312d5",
+        "model": "default"
+      },
+      "human_author": "will-jg <121209484+will-jg@users.noreply.github.com>"
+    }
+  }
+}
