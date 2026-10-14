@@ -1,0 +1,20 @@
+pkg/rules/http/client_server_address_test.go
+  s_c8db6513a11485::t_9d7d232cd48572 1-44,46-52,54,91-106
+  s_c8db6513a11485::t_aa9728bc10b761 45,53,55-90
+pkg/rules/http/net_http_otel_instrumenter.go
+  s_c8db6513a11485::t_ed26fa37efec17 18
+  s_c8db6513a11485::t_9d7d232cd48572 121-122,124,126-127,129-130
+  s_c8db6513a11485::t_01f4fede78c15a 123,125,128,131-142
+test/elasticsearch/v8.4.0/test_es_metrics.go
+  s_c8db6513a11485::t_063e2280c710db 96
+test/elasticsearch/v8.5.0/test_es_typedclient_metrics.go
+  s_c8db6513a11485::t_e933af3ca45ac4 98
+test/nethttp/test_http_metrics.go
+  s_c8db6513a11485::t_291b0d1e70b417 65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "31b12be83c8798dfbda06ad07ebac794d70b3cd3",
+  "prompts": {}
+}
